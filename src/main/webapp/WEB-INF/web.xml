@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app>
-   <Security-role>
+   <security-role>
         <role-name>role1</role-name>
-   </Security-role>
-   <Security-constraint>
+   </security-role>
+   <security-constraint>
          <web-resource-collection>
             <web-resource-name>JSPBook</web-resource-name>
             <url-pattern>/ch10/security02.jsp</url-pattern>
@@ -13,12 +13,12 @@
             <description></description>
             <role-name>role1</role-name>
          </auth-constraint>
-   </Security-constraint>
+   </security-constraint>
    <login-config>
       <auth-method>FORM</auth-method>
       <form-login-config>
         <form-login-page>/ch10/login.jsp</form-login-page>
-        <form-error-page>/ch10/login_faile.jsp</form-error-page>
+        <form-error-page>/ch10/login_failed.jsp</form-error-page>
       </form-login-config>
    </login-config>
 </web-app>
